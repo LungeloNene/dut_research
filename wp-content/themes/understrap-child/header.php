@@ -34,6 +34,63 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;523;600;700;800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+		   @-webkit-keyframes scroll {
+     0% {
+       transform: translateX(0);
+     }
+     100% {
+       transform: translateX(calc(-250px * 7));
+     }
+   }
+
+   @keyframes scroll {
+     0% {
+       transform: translateX(0);
+     }
+     100% {
+       transform: translateX(calc(-250px * 7));
+     }
+   }
+   .slider {
+     background: white;
+     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+     height: 100px;
+     margin: auto;
+     overflow: hidden;
+     position: relative;
+     width: 960px;
+   }
+   .slider::before, .slider::after {
+     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 
+0) 100%);
+     content: "";
+     height: 100px;
+     position: absolute;
+     width: 200px;
+     z-index: 2;
+   }
+   .slider::after {
+     right: 0;
+     top: 0;
+     transform: rotateZ(180deg);
+   }
+   .slider::before {
+     left: 0;
+     top: 0;
+   }
+   .slider .slide-track {
+     -webkit-animation: scroll 40s linear infinite;
+             animation: scroll 40s linear infinite;
+     display: flex;
+     width: calc(250px * 14);
+   }
+   .slider .slide {
+     height: 100px;
+     width: 250px;
+   }
+
+	</style>
 	<?php include 'favicon.php'; ?>
 	<?php wp_head(); ?>
 </head>

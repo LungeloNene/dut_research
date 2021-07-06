@@ -20,3 +20,4 @@ wp-content/themes/understrap-child/node_modules
 wp-content/wflogs/config-transient.php
 wp-content/mmr/
 wp-content/plugins/all-in-one-wp-migration/storage/
+node_modules/
