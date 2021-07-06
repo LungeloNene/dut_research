@@ -1,0 +1,39 @@
+// Sub Footer
+#wrapper-footer {
+ background-color: #2a2164;
+ font: 500 9px/24px "Montserrat";
+ letter-spacing: 0.3px;
+ color: #FFFFFF;
+ padding: 15px;
+ a{
+  font: 500 9px/24px "Montserrat";
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  .fa{
+    font-size: 22px !important;
+    margin-right: 45px;
+
+  }
+ }
+ .copy-rights{
+  display: flex;
+  justify-content: center;
+  span, a{
+    text-align: center;
+    font: 500 9px/24px "Montserrat";
+    letter-spacing: 0.3px;
+    color: #FFFFFF !important;
+  }
+ }
+
+// Desktop specific styling
+@media (min-width: $tablet) {
+  nav{
+    &.navbar{
+      box-shadow: none;
+    }
+  }
+}
+// Mobile specific styling
+@media (max-width: $tablet) {}
+}

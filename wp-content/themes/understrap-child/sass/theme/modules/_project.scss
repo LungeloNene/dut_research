@@ -1,0 +1,39 @@
+.project{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    h3{
+        font: 500 30px/40px "Montserrat";
+        letter-spacing: 1.05px;
+        color: #39756B;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: left;
+        font: 300 13px/26px "Montserrat";
+        letter-spacing: 0;
+        color: #4B4B4B;
+    }
+    .text-box{
+        overflow-y: scroll;
+        height: 540px;
+        padding-right: 30px;
+        &::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #479F97;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar{
+            background-color: #F5F5F5;
+            width: 4px;
+        }
+    }
+        // Mobile specific styling
+        @media (max-width: $tablet) {
+            .carousel-text{
+                margin-top: 60px;
+            }
+            .text-box {
+                height: 50vh;
+            }
+        }
+}

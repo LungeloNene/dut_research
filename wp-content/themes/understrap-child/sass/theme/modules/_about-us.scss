@@ -1,0 +1,30 @@
+.about-us{
+    &--preview{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        img{
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h5{
+            font-size: 35px;
+            margin-bottom: 30px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            color: #545c5c;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .btn{
+            margin-top: 30px;
+        }
+    }
+}

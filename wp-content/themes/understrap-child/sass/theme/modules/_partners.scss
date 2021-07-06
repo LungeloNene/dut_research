@@ -1,0 +1,16 @@
+.partners{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    h3{
+        font: 500 30px/40px "Montserrat";
+        letter-spacing: 1.05px;
+        color: #39756B;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $tablet) {
+        margin: 0;
+        margin-top: 85px;
+    }
+
+}

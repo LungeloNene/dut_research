@@ -1,0 +1,29 @@
+.jumplinks{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+    font-size: 20px;
+    background-color: #2a2164;
+    a{
+        color: #fff;
+        border-right: none!important;
+        border-left: none!important;
+    }
+    &.wrapper{
+        margin: 0;
+        margin-top: -1px;
+        padding: 0;
+    }
+    &--jumplink{
+        padding: 10px;
+        transition: all .2s;
+        font-weight: 400;
+        display: inline-flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        text-align: center;
+        width: 150px;
+    }
+    // Mobile specific styling
+    @media (max-width: $tablet) {
+
+    }
+}

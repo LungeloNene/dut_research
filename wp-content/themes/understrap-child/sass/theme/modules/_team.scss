@@ -1,0 +1,40 @@
+.team{
+    margin-bottom: 60px;
+    .info{
+        height: calc(400px - 215px);
+        width: 250px;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .person{
+        text-align: center;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+    }
+    h3{
+        font-size: 35px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        color: #545c5c;
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-style: normal;
+        &.role{
+            color: #b3b3b3;
+            font-size: 13px;
+        }
+    }
+    img{
+        border-radius: 7px;
+        width: 180px;
+        margin-bottom: 20px;
+        height: 180px;
+    }
+}

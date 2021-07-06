@@ -1,0 +1,99 @@
+// .site-main {
+//   padding-top: $navigation-height;
+// }
+html {
+  scroll-behavior: smooth;
+}
+
+.brand-secondary-background {
+  background: $brand-secondary;
+}
+
+.page-template-default {
+  h1 {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 40px;
+  }
+  .site-main {
+    margin-bottom: 60px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.wrapper {
+  padding: 60px 0;
+  @media (max-width: $mobile) {
+    padding: 30px 0;
+  }
+}
+
+
+.module {
+  margin: 60px 0;
+  @media (max-width: $mobile) {
+    margin: 30px 0;
+  }
+}
+div#page-wrapper {
+  padding-bottom: 0px;
+}
+a{
+  &.trigger{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 2;        
+  }
+}
+
+#main-menu_footer{
+  flex-direction: row;
+  justify-content: center;
+  li{
+    // padding-right: 15px!important;
+    padding-left: 15px!important;
+    a{
+      font: 500 10px/29px 'Montserrat';
+      letter-spacing: 0;
+      color: #164F81;
+      text-transform: uppercase;
+    }
+    &.active{
+      a{
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.mailchimp-response {
+  background: #46C4B9;
+  width: 375px;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  .close-response{
+    color: #fce604;
+    font-size: 35px;
+    position: absolute;
+    top: -12px;
+    right: 13px;
+    cursor: pointer;
+  }
+
+  @media (max-width: $mobile) {
+    position: absolute;
+    width: 273px;
+    top: 180%;
+    right: -33px;
+  }
+}

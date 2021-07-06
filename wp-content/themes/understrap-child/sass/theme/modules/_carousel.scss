@@ -1,0 +1,33 @@
+.carousel{
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 1 !important;
+    }
+    .carousel-control-next-icon{
+        background-image: url(/wp-content/themes/understrap-child/img/arrow@2x.png);
+        transform: rotate(270deg);
+        
+    }
+    .carousel-control-prev-icon{
+        background-image: url(/wp-content/themes/understrap-child/img/arrow@2x.png);
+        transform: rotate(90deg);
+    }
+    .carousel-indicators{
+        bottom: -36px;
+        left: -85px;
+        z-index: 2 !important;
+        right: unset;
+        li{
+            cursor: pointer;
+        }
+        img{
+            // width: 111px;
+            // height: 105px;
+        }
+    }
+            // Mobile specific styling
+            @media (max-width: $tablet) {
+                .carousel-indicators{
+                    display: none;
+                } 
+            }
+}

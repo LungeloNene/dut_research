@@ -1,0 +1,74 @@
+.page_preview_block{
+    max-width: 100vw;
+    color: #FFFFFF;
+    background: #39756B;
+    padding: 120px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    &.projects{
+        background: #FFFFFF;
+        color: #4B4B4B;
+        // padding: 0;
+        h5{
+            &.title{
+                color: #39756B;
+            }
+        }
+    }
+    h5{
+        &.title{
+            text-align: center;
+            font: 500 35px/40px "Montserrat";
+            letter-spacing: 1.05px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+    }
+    .content-text{
+        padding-top: 18px;
+    }
+    p{
+        text-align: left;
+        font: 400 14px/27px "Montserrat";
+        letter-spacing: 0;
+        margin-bottom: 1rem;
+    }
+    .btn{
+        justify-content: space-around;
+        width: 230px;
+        background: #164F81;
+        text-align: left;
+        font: 500 14px/20px "Montserrat";
+        letter-spacing: 0.35px;
+        color: #FFFFFF;
+        border-radius: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 35px;
+        &:hover{
+            color: #FCE604;
+            img{
+                content: url('/wp-content/themes/understrap-child/img/arrow@2x.png');
+                -ms-transform: rotate(270deg); /* IE 9 */
+                transform: rotate(270deg); /* Standard syntax */
+            }
+        }
+        img{
+            width: 13px;
+            float: right;
+            margin-right: 9px;
+        }
+    }
+        // Mobile specific styling
+        @media (max-width: $tablet) {
+            padding: 15px;
+            &#vision {
+                padding-bottom: 230px;
+                padding-top: 50px;
+            }
+            &.projects {
+                // padding: 0;
+            }
+        }
+}
